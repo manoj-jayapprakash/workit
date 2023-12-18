@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --dark-purple: 273 85% 13%;
+  --davy-grey: 271 12% 34%;
+  --eucalyptus: 150 100% 63%;
+  --ghost-white: 276 100% 99%;
+}
+
+.hero {
+  background: hsl(var(--dark-purple));
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background: url() hsl(var(--dark-purple));
+  }
+}
