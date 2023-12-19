@@ -1,5 +1,6 @@
 import { Feature } from "./feature";
 
+import phone from "../assets/images/image-hero.webp";
 const features = [
   {
     id: 1,
@@ -22,16 +23,21 @@ const features = [
 ];
 export const Features = () => {
   return (
-    <ul className='mt-36 mb-8 grid gap-8'>
-      {features.map((feature) => (
-        <li key={feature.id}>
-          <Feature
-            index={feature.id}
-            title={feature.title}
-            description={feature.description}
-          />
-        </li>
-      ))}
-    </ul>
+    <section className='features relative'>
+      <div className='absolute w-3/4 -top-[10%] left-[15%] md:w-[34rem] md:-top-[20%] md:left-[20%] lg:w-[45rem] lg:left-[30%] lg:-top-[50%]'>
+        <img src={phone} alt='phone with graph' />
+      </div>
+      <ul className='pt-48 pb-20 grid gap-8 md:w-[36rem] lg:max-w-5xl mx-auto lg:flex lg:items-center lg:w-full '>
+        {features.map((feature) => (
+          <li key={feature.id}>
+            <Feature
+              index={feature.id}
+              title={feature.title}
+              description={feature.description}
+            />
+          </li>
+        ))}
+      </ul>
+    </section>
   );
 };

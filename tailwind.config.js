@@ -7,6 +7,10 @@ export default {
         eucalyptus: "hsl(var(--eucalyptus))",
         "dark-purple": "hsl(var(--dark-purple))",
       },
+      fontFamily: {
+        fraunces: ["Fraunces", "sans-serif"],
+        manrope: ["Manrope"],
+      },
     },
   },
   plugins: [],

@@ -9,12 +9,36 @@
   --ghost-white: 276 100% 99%;
 }
 
+@font-face {
+  font-family: "Fraunces";
+  src: url("/fonts/fraunces/f.ttf");
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("/fonts/manrope/Manrope-VariableFont_wght.ttf");
+}
+
+body {
+  background: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-fraunces;
+}
+
 .hero {
   background: hsl(var(--dark-purple));
+  border-radius: 0% 0% 100% 100% / 10% 10% 12% 12%;
 }
 
 @media screen and (min-width: 768px) {
   .hero {
-    background: url() hsl(var(--dark-purple));
+    background: hsl(var(--dark-purple));
   }
 }

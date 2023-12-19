@@ -3,7 +3,7 @@ import { Social } from "./social";
 
 export const Footer = () => {
   return (
-    <footer className='my-20 grid place-items-center gap-8'>
+    <footer className='py-16 grid place-items-center gap-8'>
       <img src={logo} alt='workit logo' />
       <Social />
     </footer>
