@@ -3,6 +3,10 @@ import { Navbar } from "./navbar";
 import { Button } from "./ui/button";
 
 export const Hero = () => {
+  const clickHandler = () => {
+    const featuresSection = document.querySelector("#features");
+    featuresSection.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
   return (
     <section className={`hero h-[60vh] md:h-[48vh] lg:h-[75vh] text-white`}>
       <Navbar />
@@ -14,7 +18,7 @@ export const Hero = () => {
           </span>{" "}
           to your needs.
         </h1>
-        <Button title={"Learn more"} />
+        <Button label={"Learn more"} onClick={clickHandler} />
       </div>
     </section>
   );

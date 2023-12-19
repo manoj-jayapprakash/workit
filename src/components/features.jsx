@@ -23,7 +23,7 @@ const features = [
 ];
 export const Features = () => {
   return (
-    <section className='features relative'>
+    <section className='features relative' id='features'>
       <div className='absolute w-3/4 -top-[10%] left-[15%] md:w-[34rem] md:-top-[20%] md:left-[20%] lg:w-[45rem] lg:left-[30%] lg:-top-[50%]'>
         <img src={phone} alt='phone with graph' />
       </div>

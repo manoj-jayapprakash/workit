@@ -28,7 +28,12 @@ export const Social = () => {
     <ul className='flex items-center gap-8'>
       {socialLinks.map((social) => (
         <li key={social.id}>
-          <a>
+          <a
+            href={social.link}
+            className='cursor-pointer'
+            target='_blank'
+            rel='noreferrer'
+          >
             <img src={social.image} alt={`${social.title} logo`} />
           </a>
         </li>

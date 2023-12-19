@@ -15,7 +15,7 @@ export const Contact = () => {
           company. Apply for access below and I’ll be in touch to schedule a
           call.
         </p>
-        <Button title={"Apply for access"} />
+        <Button label={"Apply for access"} />
       </div>
     </div>
   );
