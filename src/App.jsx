@@ -5,7 +5,7 @@ import { Footer } from "./components/footer";
 
 function App() {
   return (
-    <main className='flex flex-col gap-4 font-manrope'>
+    <main className='font-manrope'>
       <Hero />
       <Features />
       <Contact />

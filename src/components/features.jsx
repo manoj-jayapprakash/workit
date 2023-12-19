@@ -23,21 +23,27 @@ const features = [
 ];
 export const Features = () => {
   return (
-    <section className='features relative' id='features'>
-      <div className='absolute w-3/4 -top-[10%] left-[15%] md:w-[34rem] md:-top-[20%] md:left-[20%] lg:w-[45rem] lg:left-[30%] lg:-top-[50%]'>
-        <img src={phone} alt='phone with graph' />
-      </div>
-      <ul className='pt-48 pb-20 grid gap-8 md:w-[36rem] lg:max-w-5xl mx-auto lg:flex lg:items-center lg:w-full '>
-        {features.map((feature) => (
-          <li key={feature.id}>
-            <Feature
-              index={feature.id}
-              title={feature.title}
-              description={feature.description}
-            />
-          </li>
-        ))}
-      </ul>
-    </section>
+    <div className='bg-ghost-white h-[58rem]'>
+      <section className='grid' id='features'>
+        <div className='w-80 md:w-[32rem] lg:w-[44rem] h-[11rem] md:h-[17rem] lg:[27rem] mx-auto relative'>
+          <img
+            src={phone}
+            alt='phone with graph'
+            className='absolute bottom-1/2 md:bottom-[35%] lg:bottom-1/4'
+          />
+        </div>
+        <ul className='grid gap-12 px-5 max-w-[35rem] mx-auto lg:flex lg:max-w-[70rem] lg:pt-20'>
+          {features.map((feature) => (
+            <li key={feature.id}>
+              <Feature
+                index={feature.id}
+                title={feature.title}
+                description={feature.description}
+              />
+            </li>
+          ))}
+        </ul>
+      </section>
+    </div>
   );
 };
